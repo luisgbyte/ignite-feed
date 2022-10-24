@@ -7,7 +7,7 @@ import "./global.css";
 
 const posts = [
   {
-    id: 1,
+    id: "1",
     author: {
       avatarUrl: "https://github.com/luisgbyte.png",
       name: "Luis",
@@ -32,7 +32,7 @@ const posts = [
     publishedAt: new Date("2022-10-24 11:00:00"),
   },
   {
-    id: 2,
+    id: "2",
     author: {
       avatarUrl: "https://github.com/diego3g.png",
       name: "Diego Fernandes",
@@ -64,7 +64,6 @@ function App() {
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
-
         <main>
           {posts.map((post) => (
             <Post
